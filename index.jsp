@@ -11,7 +11,7 @@
         <input type="submit" value="Submit" />
     </form>
     <br>
-    <a href="https://hit.ac.il">Go to HIT Website</a>
+    <a href="https://www.hit.ac.il">Go to HIT Website</a>
 </body>
 
 </html>
