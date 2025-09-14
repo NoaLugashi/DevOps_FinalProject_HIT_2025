@@ -1,0 +1,132 @@
+{
+  "id": "a6867864-746b-4e82-8862-0c00047a69c6",
+  "version": "2.0",
+  "name": "DevOpsProj",
+  "url": "http://18.185.1.198:8080",
+  "tests": [{
+    "id": "2f0a794f-f83c-4cba-a958-1ed25162403f",
+    "name": "v1",
+    "commands": [{
+      "id": "c425a37a-6eb3-4a04-a55f-36ffb50fdd9b",
+      "comment": "",
+      "command": "open",
+      "target": "/DevOpsProj/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a55d6bb5-5143-4be1-911b-399957ebb36b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b948abac-beb1-4e49-8faf-908e2022bc3a",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nick"
+    }, {
+      "id": "1003a3c9-b7bf-4d8a-8900-0a6b0103738b",
+      "comment": "",
+      "command": "storeValue",
+      "target": "name=username",
+      "targets": [],
+      "value": "enteredName"
+    }, {
+      "id": "877f3ec6-a3ad-402e-984d-e334494d965f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Submit']",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome, Nick!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1d155ab-8ced-4e3b-99b1-3d1f33fa5c34",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome, Nick!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome, ${enteredName}!"
+    }, {
+      "id": "3557ea96-bc74-4579-852e-673006fa461a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c600c86d-f382-4e81-89d6-43c4157b9aaa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/a",
+      "targets": [],
+      "value": "https://www.hit.ac.il/"
+    }, {
+      "id": "3b8a9480-8b5d-4859-8062-5df3146f90a6",
+      "comment": "",
+      "command": "open",
+      "target": "http://18.185.1.198:8081",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de446afa-ff44-46ac-ab90-4c5dcb12adea",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [],
+      "value": "nickhaimov"
+    }, {
+      "id": "c93c599d-7ed2-44cb-a3b0-c69372753469",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_password",
+      "targets": [],
+      "value": "Nikitaking123"
+    }, {
+      "id": "8a87a15a-12de-45c5-8398-f333447cb27b",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f32d2ad9-dc61-4a98-825e-a1cebce4ed79",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[@class='jenkins-mobile-hide']",
+      "targets": [],
+      "value": "Jenkins"
+    }]
+  }],
+  "suites": [{
+    "id": "20f0217e-180e-43bd-8377-92f83be77d48",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2f0a794f-f83c-4cba-a958-1ed25162403f"]
+  }],
+  "urls": ["http://18.185.1.198:8080/"],
+  "plugins": []
+}
