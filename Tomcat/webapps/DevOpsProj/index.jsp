@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h2>TESTESTTEST !!!!!  Hello from DevOps Project !</h2>
+    <h2>TEST NEW  Hello from DevOps Project !</h2>
     <form action="response.jsp" method="post">
         Enter your name: <input type="text" name="username" />
         <input type="submit" value="Submit" />
